@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+        list-style: none;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+
+    }
+    #banner-image-container{
+        height: 100%;
+        width: 100%;
+    }
+
+    /* The Code for the Navbar Start Here */
+    .main-content::after{
+        content: "\2261";
+        float:right;
+        text-align: center;
+        color:antiquewhite;
+        font-size: 45px;
+        display: none;
+    }
+    #main-warpper{
+    width: 100%;
+    }
+    #nav-container{
+        z-index: 1;
+        top: 0;
+        position: sticky;
+        width:100%;
+        display: flex;
+        justify-content: end;
+        flex-wrap: nowrap;
+        background-color:rgb(75,55,28);
+        padding: 10px 10px;
+
+    }
+    .sub-container-one{
+        width:70%;
+        display: flex;
+        align-items: center;
+        justify-content:end;
+    }
+    .sub-container-two{
+        width:30%;
+    }
+    #nav-container ul{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    #nav-container ul li{
+        text-align: center;
+        color: antiquewhite;
+        padding:10px 0px;
+        font-family: cursive;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    @media (max-width:1568px){
+        #nav-container{
+            flex-direction: column;
+        }
+        #nav-container ul{
+            flex-direction: column;
+            color: red;
+        }
+        .sub-container{
+        border:1px solid black;
+        width:100%;
+    }
+    #nav-container ul li{
+        background-color:#231709;
+        width: 100%;
+        margin: 1px;
+    }
+    .sub-container-one{
+        width: 100%;
+    }
+    .main-content::after{
+        display: block;
+
+    }
+    .sub-container-two{
+        width:100%;
+    }
+
+    }
+        /* The Code for the Navbar Ends Here */
+
+/* Now i m gone write a code for Menu box  Which starts from here */
+#menuCard-Container{
+    width: 100%;
+    height: 100%;
+    padding: 0px 60px;
+    margin: 50px 0px;
+}
+#itemPrice-Container{
+    background-color:#231709;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 100%;
+
+}
+#itemPrice-Container h1{
+    background-color: antiquewhite;
+    padding: 10px;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.price-item-sub-container-Two{
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    bottom: 0;
+}
+.price-item-sub-section{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+}
+.text-table-main-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.price-text-container{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+.price-table-container{
+    /* Empty */
+}
+.price-item-sub-section table{
+    color:antiquewhite;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 400px;
+}
+.price-item-sub-section table tr th{
+    font-size: 25px;
+    text-align: left;
+    padding: 20px;
+}
+
+@media (max-width:1068px){
+    #itemPrice-Container{
+    }
+    .price-item-sub-container-Two{
+        flex-direction: column;
+    }
+.price-item-sub-section{
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}}
+/* Now we are gone write a code for section 2 for the gallary */
+#imageGallery-main-Container{
+    margin-top: 50px;
+    background-color: #a2846e;
+    border-radius: 20px;
+}
+#imageGallery-text-sub-container{
+    text-align: center;
+    font-size: 45px;
+    line-height:80px;
+
+}
+
+#imageGallery-images-sub-container ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    padding: 20px 0px;
+    gap: 10px;
+    width: 100%;
+}
+#imageGallery-images-sub-container ul li{
+    background-color: red;
+    width: 100%;
+    max-width: 300px;
+    height: 360px;
+
+}
+/* Now here starts the last contact conatiner */
+
+#contactUs-Container{
+    margin-top: 50px;
+    border: 1px solid white;
+    color:antiquewhite;
+    text-align: center;
+    background-color:  #231709;
+    border-radius: 20px;
+}
+#contactUs-Container h1{
+    font-size: 40px;
+    background-color: antiquewhite;
+    font-weight: bold;
+    color: #231709 ;
+    padding: 15px;
+    margin-top: 30px;
+}
+#contactUs-Container ul li{
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div id="main-warpper">
+        <!-- Here Navbar Starts -->
+        <nav id="nav-container">
+            <div class="sub-container-one main-content"></div>
+            <div class="sub-container-two"><ul>
+                <li>Home</li>
+                <li>Menu</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        </nav>
+        <div id="banner-image-container">
+            <img src="./Images/coffebeans-transformed.jpeg" alt="coffebean-banner" width="100%" height="100%">
+        </div>
+        <!-- Here Navbar Ends -->
+        <div id="menuCard-Container">
+            <!-- Here Starts The first Section of Items and there Pricing -->
+    <section id="itemPrice-Container">
+        <h1>MENU</h1>
+        <div class="price-item-sub-container-Two">
+            <div class="price-item-sub-section">
+                <div class="text-table-main-container">
+                <div class="price-text-container"><h2>COFFEE</h2></div>
+                <div class="price-table-container">
+                <table>
+                    <tr><th>Americano</th>
+                        <th>150/-</th>
+                    </tr>
+                    <tr><th>Cappuccino</th>
+                        <th>150/-</th>
+                    </tr>
+                    <tr><th>Caffe Latte</th>
+                        <th>120/-</th>
+                    </tr>
+                    <tr><th>Macchiato</th>
+                        <th>150/-</th>
+                    </tr>
+                    <tr><th>Espresso</th>
+                        <th>250/-</th>
+                    </tr>
+                    <tr><th>Caramel Latte</th>
+                        <th>150/-</th>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+            </div>
+            <div class="price-item-sub-section">
+                <div class="text-table-main-container">
+                <div class="price-text-container"><h2>NON-COFFEE</h2></div>
+                <div class="price-table-container">
+                <table>
+                    <tr><th>Black Tea</th>
+                        <th>100/-</th>
+                    </tr>
+                    <tr><th>Milk Tea</th>
+                        <th>150/-</th>
+                    </tr>
+                    <tr><th>Green Tea</th>
+                        <th>120/-</th>
+                    </tr>
+                    <tr><th>Jasmine Tea</th>
+                        <th>150/-</th>
+                    </tr>
+                    <tr><th>Elaichi Tea</th>
+                        <th>150/-</th>
+                    </tr>
+                    <tr><th>Special Dark Roast Mug</th>
+                        <th>350/-</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+            </div>
+        </div>
+    </section>
+    <!-- Here Ends The first Section of Items and there Pricing -->
+
+    <section id="imageGallery-main-Container">
+     <div id="imageGallery-text-sub-container">
+        <h1><u>Our Gallery</u></h1>
+        <h6>May your coffee be strong and your Monday be short.</h6>
+     </div>
+     <div id="imageGallery-images-sub-container">
+        <ul>
+            <li><img src="" alt="">sdfdsdfss</li>
+            <li><img src="" alt="">sdfdsfs</li>
+            <li><img src="" alt="">sdffd</li>
+            <li><img src="" alt="">sdfds</li>
+            <li><img src="" alt="">sdfs</li>
+        </ul>
+     </div>
+    </section>
+    <section id="contactUs-Container">
+        <h1 id="contact-heading">CONTACT US</h1>
+        <ul>
+            <li>Address:</li>
+            <li>        </li>
+            <li>Gadchiroli</li>
+            <li>Maharashrta</li>
+            <li>PinCode:442605</li>
+            <li>India</li>
+            <li></li>
+            <li>Contact No:+91 2342631344</li>
+        </ul>
+    </section>
+    </div>
+    <script></script>
+</body>
+</html>
